@@ -1,0 +1,16 @@
+{
+  "owner": "xrdavies",
+  "repos": ["mobd", "mob", "mob-ios", "mob-android", "mob-site"],
+  "mode": "draft",
+  "pollMinutes": 5,
+  "dataDir": "~/.mob-maintain-runner",
+  "maxDiffBytes": 200000,
+  "maxRetriagePerItem": 3,
+  "agentTimeoutMinutes": 20,
+  "codexArgs": ["-c", "model_reasoning_effort=\"high\""],
+  "securityEmail": "mob@taoist.dev",
+  "linkHosts": [
+    "github.com", "mymob.dev", "dl.mymob.dev", "en.wikipedia.org",
+    "developers.openai.com", "code.claude.com", "tailscale.com", "developers.cloudflare.com"
+  ]
+}

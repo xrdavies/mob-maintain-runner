@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "harm", "recommendation", "summary", "analysis", "reply"],
+  "properties": {
+    "kind": { "type": "string", "enum": ["bugfix", "feature", "docs", "site", "refactor", "other"] },
+    "harm": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["file", "reason"],
+        "properties": { "file": { "type": "string" }, "reason": { "type": "string" } }
+      }
+    },
+    "recommendation": { "type": "string", "enum": ["looks_good", "changes_requested", "needs_maintainer", "close_suggested"] },
+    "summary": { "type": "string" },
+    "analysis": { "type": "string" },
+    "reply": { "type": "string" }
+  }
+}

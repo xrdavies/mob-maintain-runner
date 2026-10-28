@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "real", "should_fix", "needs_info", "duplicate_of", "summary", "analysis", "fix_plan", "reply"],
+  "properties": {
+    "kind": { "type": "string", "enum": ["bug", "feature", "question", "docs", "duplicate", "support", "security", "spam", "other"] },
+    "real": { "type": "string", "enum": ["yes", "no", "unclear"] },
+    "should_fix": { "type": "string", "enum": ["yes", "no", "maybe"] },
+    "needs_info": { "type": "array", "items": { "type": "string" } },
+    "duplicate_of": { "type": ["integer", "null"] },
+    "summary": { "type": "string" },
+    "analysis": { "type": "string" },
+    "fix_plan": { "type": "string" },
+    "reply": { "type": "string" }
+  }
+}

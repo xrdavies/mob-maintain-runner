@@ -1,0 +1,13 @@
+{
+  "name": "mob-maintain-runner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Triages community issues and pull requests of the Mob repositories with a local agent",
+  "engines": { "node": ">=24" },
+  "bin": { "mob-maintain-runner": "bin/runner.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node bin/runner.mjs run"
+  }
+}
