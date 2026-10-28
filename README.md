@@ -51,6 +51,12 @@ node bin/runner.mjs status
 make install                         # run it as a LaunchAgent (make uninstall, make logs)
 ```
 
+`make install` passes the shell's `https_proxy` to the service (GitHub, git and Codex use it).
+Use `make install PROXY=http://host:port` for another proxy, or `PROXY=` for none.
+
+```bash
+```
+
 **Draft mode** (the default in `config.json`) posts nothing: each triage writes
 `~/.mob-maintain-runner/reports/<repo>/<n>.md` and shows a notification. Put
 `{"mode": "post"}` in `config.local.json` to post labels and comments.
