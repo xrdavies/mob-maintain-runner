@@ -8,7 +8,7 @@ It proposes; the maintainer decides, merges and closes.
 
 ## What it does
 
-Every few minutes it lists open issues and PRs updated since the last pass (through `gh`, logged
+Every hour it lists open issues and PRs updated since the last pass (through `gh`, logged
 in as the maintainer), and for each new one, or one with a new comment or new commits:
 
 - **Issue:** the agent reads it against the repo's code and docs and decides the kind (bug,
